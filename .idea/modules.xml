@@ -5,10 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/0_shablon.iml" filepath="$PROJECT_DIR$/.idea/modules/0_shablon.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/0_shablon_main.iml" filepath="$PROJECT_DIR$/.idea/modules/0_shablon_main.iml" group="0_shablon" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/0_shablon_test.iml" filepath="$PROJECT_DIR$/.idea/modules/0_shablon_test.iml" group="0_shablon" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis-tests2222.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis-tests2222.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis-tests_main.iml" group="mantis-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis-tests_test.iml" group="mantis-tests" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sandbox.iml" filepath="$PROJECT_DIR$/.idea/modules/sandbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sandbox_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sandbox_main.iml" group="sandbox" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sandbox_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sandbox_test.iml" group="sandbox" />
       <module fileurl="file://$PROJECT_DIR$/mantis-tests2222/src/test/test.iml" filepath="$PROJECT_DIR$/mantis-tests2222/src/test/test.iml" group="addressbook-web-tests" />
