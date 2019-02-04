@@ -9,7 +9,7 @@ import java.sql.Statement;
 public class DbConnectionTest {
     public static void main(String[] args) {
         // Create a variable for the connection string.
-        String connectionUrl = "jdbc:sqlserver://192.168.1.213:1433:1433;" + "databaseName=test;user=test;password=test;";
+        String connectionUrl = "jdbc:sqlserver://192.168.1.213:1433;databaseName=test;user=test;password=test";
          try (Connection con = DriverManager.getConnection(connectionUrl); Statement stmt = con.createStatement();) {
             String SQL = "SELECT TOP 5 DEBTOR_LAST_NAME,DEBTOR_BIRTH_DATE from CLIENT";
             ResultSet rs = stmt.executeQuery(SQL);
