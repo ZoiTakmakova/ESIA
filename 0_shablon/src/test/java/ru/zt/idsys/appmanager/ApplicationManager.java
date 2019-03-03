@@ -31,7 +31,7 @@ public void init() {
     wd = new InternetExplorerDriver();
   }
 
- wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+ wd.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
  wd.get("http://192.168.1.212:8080/bank_client/#REESTR_IP");
   navigationHelper = new NavigationHelper(wd);
   sessionHelper = new SessionHelper(wd);

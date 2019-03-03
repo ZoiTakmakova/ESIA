@@ -3,6 +3,8 @@ package ru.zt.idsys.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class NavigationHelper extends HelperBase {
 
 
@@ -22,6 +24,35 @@ public NavigationHelper(WebDriver wd) {
   click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Справочники'])[1]/following::span[1]"));
   }
 
+  public void gotoPlannerTask(String taskName) {
+  //Планировщик
+    click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Настройки почты'])[1]/following::span[1]"));
+      wd.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+    //Задачи планировщика
+    click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Планировщик'])[1]/following::span[1]"));
+
+    //Восстановить фильтры и сортировку
+    click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Список [Фоновая задача]'])[1]/following::img[7]"));
+
+    //Выбрать фильтр Наименование
+    //findElement(By.id("FILTER-[LIKE]SJOB_CAPTION319726190")).sendKeys("Обработка запросов СПИ - создать ответы");
+      type(By.id("FILTER-[LIKE]SJOB_CAPTION~"),taskName);
+
+
+    //Применить условия фильтрации
+
+      click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Активна'])[1]/following::span[3]"));
+
+
+    //Выбрать задачу планировщика из списка
+    click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)=concat('Задача ', " +
+            " '\\\"', 'Обработка запросов СПИ - создать ответы', '\\\"', ' запущена.')])[1]/following::span[2]"));
+    //Запустить задачу
+    click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Список [Фоновая задача]'])[1]/following::img[11]"));
+    //Ок
+    click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)=concat('Задача ', '\\\"',  " +
+            "'Обработка запросов СПИ - создать ответы', '\\\"', ' запущена.')])[1]/following::span[2]"));
+  }
 
 /*
 public void gotoGroupPage() {
